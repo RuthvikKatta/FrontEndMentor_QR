@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+            :root{
+                --body-color: hsl(212, 45%, 89%);
+                --bg-color: hsl(0, 0%, 100%);
+                --heading: hsl(218, 44%, 22%);
+                --para:hsl(220, 15%, 55%);
+            }
+            *{
+                margin:0px;
+                padding: 0px;
+            }
+            body{
+                background-color: var(--body-color);
+                display: flex;
+                min-height: 100vh;
+                align-items: center;
+                justify-content: center;
+            }
+            .box{
+                background-color: var(--bg-color);
+                width:365px;
+                border-radius: 10px;
+                text-align: center;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .qr > img{
+                width : 100%;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            .text{
+                width:75%;
+                text-align:center;
+                font-family: 'Outfit', sans-serif;
+                margin-bottom: 30px;
+            }
+            h2{
+                color:var(--heading);
+                font-weight:700px;
+                margin-bottom:10px ;
+            }
+            p{
+                color: var(--para);
+                font-weight:400px;
+            }
+            @media (max-width:375px) {
+                .box{
+                    background-color: var(--bg-color);
+                    width:300px;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }              
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <div class="box">
+            <div class="qr"><img src="https://i.ibb.co/WF4dk79/image-qr-code.png" ></div>
+            <div class="text">
+                <h2>Improve your front-end skills by building projects</h2>
+                <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+            </div>
+        </div>
+    </body>
+</html>
